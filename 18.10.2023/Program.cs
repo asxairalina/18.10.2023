@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿//Ахмет-Гараева и Башарова
+
+using Newtonsoft.Json;
 
 Product Product = new Product("red", "gaga");
 Tshirt Tshirt = new Tshirt("red", "gaga");
@@ -7,14 +9,16 @@ Scarf Scarf = new Scarf("red", "gaga");
 Hat Hat = new Hat("red", "gaga");
 Coat Coat = new Coat("red", "gaga");
 Socks Socks = new Socks("red", "gaga");
-Jeans Jeans = new Jeans("red", "gaga");
-Skirt Skirt = new Skirt("red", "gaga");
 Dress Dress = new Dress("red", "gaga");
 Jacket Jacket = new Jacket("red", "gaga");
+Jeans Jeans = new Jeans("red", "gaga");
+Skirt Skirt = new Skirt("red", "gaga");
+
 
 List<Product> products = new List<Product>();
 products.Add(Product);
 products.Add(Tshirt);
+products.Add(Sneakers);
 
 foreach (Product c in products)
 {
