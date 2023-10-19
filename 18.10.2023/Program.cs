@@ -1,6 +1,8 @@
 ﻿//Ахмет-Гараева и Башарова
 
 using Newtonsoft.Json;
+using System.Reflection.Metadata.Ecma335;
+Product product = factory.Create();
 
 Product Product = new Product("red", "gaga");
 Tshirt Tshirt = new Tshirt("red", "gaga");
@@ -203,3 +205,19 @@ class Jacket : Product //10
         Console.WriteLine("Pockets skirt");
     }
 }
+
+
+public static class ProductFactory
+{
+    public static Product CreateProduct(string color)
+    {
+        return new Product(color);
+    }
+
+    public static Tshirt CreateTshirt(string color)
+    {
+        return new Tshirt(color);
+    }
+}
+
+
